@@ -36,7 +36,7 @@ export const websiteConfig = {
 
   // Contact Information
   contact: {
-    phone: "(970) 555-0123",
+    phone: "+213554261617",
     phoneLink: "tel:+19705550123",
     email: "mrsaoulahocine@gmail.com",
     emailLink: "mailto:mrsaoulahocine@gmail.com",
