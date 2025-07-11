@@ -2,7 +2,7 @@
 export const websiteConfig = {
   // Business Information
   business: {
-    name: "ElitTe Handyman Services",
+    name: "saoula Hocine Handyman",
     tagline: "Your Trusted Handyman in Greeley",
     description: "Quality home repairs, maintenance, and improvements serving Greeley, Colorado with over 15 years of experience. Licensed, insured, and committed to excellence in every project in Northern Colorado.",
     yearsExperience: 15,
