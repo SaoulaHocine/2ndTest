@@ -71,15 +71,6 @@ export const websiteConfig = {
     {
       title: "Plumbing Services",
       description: "Plumbing repairs and installations for your home",
-      features: ["Faucet Repair", "Toilet Installation", "Pipe Repairs", "Drain Cleaning"]
-    },
-    {
-      title: "Home Maintenance",
-      description: "Regular maintenance to keep your home in top condition",
-      features: ["Seasonal Inspections", "Preventive Maintenance", "Safety Checks", "Weatherproofing"]
-    },
-    {
-      title: "Installation Services",
       description: "Professional installation of various home fixtures", 
       features: ["TV Mounting", "Shelving Installation", "Cabinet Hardware", "Appliance Setup"]
     }
@@ -103,17 +94,24 @@ export const websiteConfig = {
     instagram: "#",
     linkedin: "#"
   },
+      publishDate: '2025-01-15',
+      readTime: '8 min read',
+      category: 'Services Guide',
+      image: 'https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=800',
+      seo: {
+        title: 'Complete Guide to Handyman Services in Greeley, CO | Expert Tips',
+        description: 'Find reliable handyman services in Greeley, CO. Learn about costs, licensing, and how to choose the best local handyman for your home repairs.',
+        keywords: 'handyman Greeley CO, handyman services Greeley, local handyman Colorado, home repairs Greeley'
+      }
+    },
+    {
+      id: 'home-repair-services-greeley-professional',
+      title: 'Home Repair Services in Greeley: When to Call a Professional Handyman',
+      excerpt: 'Learn when to tackle DIY projects versus calling a professional handyman for your Greeley home repairs.',
+      content: `Maintaining a home in Greeley comes with its share of challenges, from seasonal wear to unexpected breakdowns. Knowing when to call a professional handyman can save time, money, and stress. Here's a guide to common home repair issues in Greeley, how to decide between DIY and professional help, choosing the right service, and understanding costs and scheduling.
 
   // Navigation Menu
   navigation: [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" }
-  ],
-
-  // Footer Links
   footerLinks: {
     legal: [
       { name: "Privacy Policy", href: "#" },
@@ -136,6 +134,21 @@ export const websiteConfig = {
       location: "West Greeley",
       rating: 5,
       text: "Professional, reliable, and reasonably priced. They painted our entire living room and dining area. The attention to detail was impressive, and they cleaned up perfectly.",
+      publishDate: '2025-01-10',
+      readTime: '7 min read',
+      category: 'Home Maintenance',
+      image: 'https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=800',
+      seo: {
+        title: 'When to Call a Professional Handyman in Greeley | Home Repair Guide',
+        description: 'Learn when to DIY vs hire a professional handyman in Greeley. Compare costs, services, and find the right contractor for your home repairs.',
+        keywords: 'professional handyman Greeley, home repair services Colorado, DIY vs professional, handyman contractors Greeley'
+      }
+    },
+    {
+      id: 'handyman-pricing-guide-greeley-colorado',
+      title: 'Handyman Pricing Guide: What Does Home Repair Cost in Greeley, Colorado?',
+      excerpt: 'Understand handyman pricing in Greeley, CO with our comprehensive cost guide including hourly rates and project estimates.',
+      content: `Home repairs and maintenance are a part of every homeowner's life, but understanding what you'll pay for a handyman in Greeley, CO can help you budget and choose the right service for your needs. Here's a comprehensive guide to handyman prices, what affects them, and how to get the best value.
       service: "Interior Painting"
     },
     {
@@ -165,6 +178,21 @@ export const websiteConfig = {
       rating: 5,
       text: "Helped us with multiple small repairs around our office building. Very professional team, always on time, and they handle everything efficiently. Great for ongoing maintenance.",
       service: "Commercial Maintenance"
+      publishDate: '2025-01-05',
+      readTime: '6 min read',
+      category: 'Pricing Guide',
+      image: 'https://images.pexels.com/photos/5025639/pexels-photo-5025639.jpeg?auto=compress&cs=tinysrgb&w=800',
+      seo: {
+        title: 'Handyman Pricing Guide Greeley CO | 2025 Cost Estimates',
+        description: 'Get accurate handyman pricing for Greeley, Colorado. Compare hourly rates, project costs, and seasonal pricing for home repairs.',
+        keywords: 'handyman prices Greeley CO, handyman cost Colorado, home repair pricing Greeley, handyman rates 2025'
+      }
+    },
+    {
+      id: 'finding-right-handyman-greeley-directory',
+      title: 'Finding the Right Handyman in Greeley: Your Complete Local Directory',
+      excerpt: 'Your comprehensive guide to hiring, vetting, and working with the best handyman services in Greeley, Colorado.',
+      content: `Keeping your Greeley home in top shape means having access to reliable, skilled local handyman services. Whether you need carpentry, drywall repair, or special modifications for seniors, knowing how to hire the right handyman is essential. Here's your comprehensive guide to hiring, vetting, and working with Greeley's best handyman businesses.
     }
   ],
 
@@ -179,12 +207,6 @@ export const websiteConfig = {
     title: "Elite Handyman Services - Professional Home Repairs & Maintenance",
     description: "Professional handyman services in Greeley, Colorado for home repairs, maintenance, and improvements. Licensed, insured, and serving Northern Colorado with quality craftsmanship.",
     keywords: "handyman Greeley Colorado, home repair Greeley, maintenance contractor Colorado, local handyman Northern Colorado, home improvement Greeley",
-    ogTitle: "Elite Handyman Services - Greeley, Colorado Home Repairs",
-    ogDescription: "Quality handyman services for all your home repair and maintenance needs in Greeley, Colorado. Licensed, insured, and trusted by local homeowners."
-  },
-
-  // Image URLs (fallback to Pexels if CSV images don't load)
-  images: {
     hero: [
       'https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -199,7 +221,24 @@ export const websiteConfig = {
       'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=800'
     ]
+  },
+
+      id: 'complete-guide-handyman-services-greeley',
+      title: 'Complete Guide to Handyman Services in Greeley, CO: What You Need to Know',
+      excerpt: 'Discover the comprehensive range of handyman services available in Greeley, CO, from basic repairs to major installations.',
+      content: `If you're searching for a handyman near me in Greeley, CO, this guide will help you understand the range of handyman services available, how to find a reliable local handyman, what to expect from a licensed handyman, and typical costs in the area.
   }
+      publishDate: '2024-12-28',
+      readTime: '10 min read',
+      category: 'Local Directory',
+      image: 'https://images.pexels.com/photos/5025640/pexels-photo-5025640.jpeg?auto=compress&cs=tinysrgb&w=800',
+      seo: {
+        title: 'Best Handyman in Greeley CO | Local Directory & Hiring Guide',
+        description: 'Find the best handyman in Greeley, Colorado. Complete directory with hiring tips, questions to ask, and local specialties.',
+        keywords: 'best handyman Greeley CO, hire handyman Colorado, local handyman directory Greeley, handyman services near me'
+      }
+    }
+  ]
 };
 
 export default websiteConfig;
