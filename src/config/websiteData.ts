@@ -2,7 +2,7 @@
 export const websiteConfig = {
   // Business Information
   business: {
-    name: "Elit handyman",
+    name: "Handyman Greeley CO",
     tagline: "Your Trusted Handyman in Greeley",
     description: "Quality home repairs, maintenance, and improvements serving Greeley, Colorado with over 15 years of experience. Licensed, insured, and committed to excellence in every project in Northern Colorado.",
     yearsExperience: 15,
@@ -40,7 +40,7 @@ export const websiteConfig = {
     phoneLink: "tel:+19705550123",
     email: "mrsaoulahocine@gmail.com",
     emailLink: "mailto:mrsaoulahocine@gmail.com",
-    website: "https://elitehandymangreeley.com"
+    website: "https://www.handymangreeleyco.com"
   },
 
   // Business Hours
