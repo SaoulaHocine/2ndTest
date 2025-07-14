@@ -8,7 +8,7 @@ const BlogSection = () => {
   const recentPosts = websiteConfig.blogPosts.slice(0, 3);
 
   return (
-    <section className="py-20 bg-gray-800">
+    <section id="blog" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-900/30 rounded-full mb-4">
