@@ -13,20 +13,18 @@ interface BlogPost {
 
 interface BlogCardProps {
   post: BlogPost;
-  onClick?: () => void;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ post, onClick }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
   const handleClick = () => {
-    if (onClick) {
-      onClick();
-    } else {
-      window.location.href = `/blog/${post.id}`;
-    }
+    window.location.href = `/blog/${post.id}`;
   };
 
   return (
-    <article className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all hover:bg-gray-750 border border-gray-700 group cursor-pointer">
+    <article 
+      className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all hover:bg-gray-750 border border-gray-700 group cursor-pointer"
+      onClick={handleClick}
+    >
       <div className="relative h-48 overflow-hidden">
         <img
           src={post.image}
@@ -66,7 +64,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, onClick }) => {
         </p>
         
         <button
-          onClick={handleClick}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleClick();
+          }}
           className="inline-flex items-center text-blue-400 font-semibold hover:text-blue-300 transition-colors group"
         >
           Read More

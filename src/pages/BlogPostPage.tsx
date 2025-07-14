@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Calendar, Clock, Phone, Share2, Tag } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Phone, Share2, Tag, Check } from 'lucide-react';
 import BlogCard from '../components/BlogCard';
 import { websiteConfig } from '../config/websiteData';
 
@@ -10,6 +10,7 @@ interface BlogPostPageProps {
 const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
   const post = websiteConfig.blogPosts.find(p => p.id === postId);
   const relatedPosts = websiteConfig.blogPosts.filter(p => p.id !== postId).slice(0, 3);
+  const [shareSuccess, setShareSuccess] = React.useState(false);
 
   if (!post) {
     return (
@@ -22,6 +23,26 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
     );
   }
 
+  const handleShare = async () => {
+    const url = `${window.location.origin}/blog/${postId}`;
+    
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareSuccess(true);
+      setTimeout(() => setShareSuccess(false), 2000);
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = url;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setShareSuccess(true);
+      setTimeout(() => setShareSuccess(false), 2000);
+    }
+  };
+
   // Convert markdown-style content to HTML-like structure
   const formatContent = (content: string) => {
     return content
@@ -30,8 +51,23 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
         if (paragraph.startsWith('## ')) {
           return <h2 key={index} className="text-2xl font-bold text-white mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
         }
-        if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-          return <h3 key={index} className="text-xl font-semibold text-white mt-6 mb-3">{paragraph.replace(/\*\*/g, '')}</h3>;
+        // Handle bold text as subtitles
+        if (paragraph.includes('**')) {
+          const parts = paragraph.split(/\*\*(.*?)\*\*/g);
+          return (
+            <div key={index} className="my-4">
+              {parts.map((part, partIndex) => {
+                if (partIndex % 2 === 1) {
+                  // This is the content between **
+                  return <h3 key={partIndex} className="text-xl font-semibold text-white mt-6 mb-3">{part}</h3>;
+                } else if (part.trim()) {
+                  // This is regular text
+                  return <p key={partIndex} className="text-gray-300 leading-relaxed">{part}</p>;
+                }
+                return null;
+              })}
+            </div>
+          );
         }
         if (paragraph.includes('|')) {
           // Simple table rendering
@@ -143,9 +179,21 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
                 <Clock className="h-5 w-5" />
                 <span>{post.readTime}</span>
               </div>
-              <button className="flex items-center space-x-2 hover:text-blue-400 transition-colors">
-                <Share2 className="h-5 w-5" />
-                <span>Share</span>
+              <button 
+                onClick={handleShare}
+                className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
+              >
+                {shareSuccess ? (
+                  <>
+                    <Check className="h-5 w-5 text-green-500" />
+                    <span className="text-green-500">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Share2 className="h-5 w-5" />
+                    <span>Share</span>
+                  </>
+                )}
               </button>
             </div>
 
