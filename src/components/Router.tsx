@@ -3,10 +3,6 @@ import App from '../App';
 import BlogPage from '../pages/BlogPage';
 import BlogPostPage from '../pages/BlogPostPage';
 
-interface BlogPostPageProps {
-  postId: string;
-}
-
 const Router: React.FC = () => {
   const path = window.location.pathname;
 
