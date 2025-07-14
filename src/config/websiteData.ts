@@ -8,25 +8,102 @@ export const websiteConfig = {
     address: "Greeley, Colorado",
     hours: "Monday - Friday: 8AM - 6PM, Saturday: 9AM - 4PM",
     license: "Licensed & Insured",
-    experience: "10+ Years Experience"
+    experience: "10+ Years Experience",
+    rating: 4.9,
+    reviewCount: 127
   },
   
   location: {
     city: "Greeley",
     state: "Colorado",
     zipCodes: ["80631", "80632", "80633", "80634", "80639"],
-    serviceRadius: "30 miles"
+    serviceRadius: "30 miles",
+    serviceAreas: [
+      "Greeley, CO",
+      "Evans, CO",
+      "Windsor, CO",
+      "Eaton, CO",
+      "Garden City, CO",
+      "LaSalle, CO"
+    ]
   },
 
   contact: {
     phone: "(970) 555-0123",
+    phoneLink: "tel:+19705550123",
     email: "info@handymangreeleyco.com",
     website: "https://www.handymangreeleyco.com",
     socialMedia: {
       facebook: "https://facebook.com/handymangreeleyco",
-      google: "https://business.google.com/handymangreeleyco"
+      google: "https://business.google.com/handymangreeleyco",
+      yelp: "https://yelp.com/biz/handymangreeleyco",
+      nextdoor: "https://nextdoor.com/handymangreeleyco"
     }
   },
+
+  navigation: [
+    { name: "Home", href: "/" },
+    { name: "Services", href: "#services" },
+    { name: "About", href: "#about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "#contact" }
+  ],
+
+  footerLinks: {
+    services: [
+      { name: "Home Repairs", href: "#services" },
+      { name: "Bathroom & Kitchen", href: "#services" },
+      { name: "Flooring Services", href: "#services" },
+      { name: "Exterior Work", href: "#services" },
+      { name: "Electrical & Plumbing", href: "#services" },
+      { name: "Carpentry", href: "#services" }
+    ],
+    company: [
+      { name: "About Us", href: "#about" },
+      { name: "Our Team", href: "#about" },
+      { name: "Testimonials", href: "#testimonials" },
+      { name: "Service Areas", href: "#contact" }
+    ],
+    resources: [
+      { name: "Blog", href: "/blog" },
+      { name: "Free Estimate", href: "#contact" },
+      { name: "Emergency Service", href: "#contact" },
+      { name: "Maintenance Tips", href: "/blog" }
+    ]
+  },
+
+  businessHours: [
+    { day: "Monday", hours: "8:00 AM - 6:00 PM" },
+    { day: "Tuesday", hours: "8:00 AM - 6:00 PM" },
+    { day: "Wednesday", hours: "8:00 AM - 6:00 PM" },
+    { day: "Thursday", hours: "8:00 AM - 6:00 PM" },
+    { day: "Friday", hours: "8:00 AM - 6:00 PM" },
+    { day: "Saturday", hours: "9:00 AM - 4:00 PM" },
+    { day: "Sunday", hours: "Closed" }
+  ],
+
+  images: {
+    logo: "/logo.png",
+    hero: "https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    about: "https://images.pexels.com/photos/5691654/pexels-photo-5691654.jpeg?auto=compress&cs=tinysrgb&w=800",
+    services: "https://images.pexels.com/photos/5691661/pexels-photo-5691661.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  googleMaps: {
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96748.54094638802!2d-104.7091!3d40.4233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876ea16a8b7b8b8b%3A0x1234567890abcdef!2sGreeley%2C%20CO!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus",
+    searchUrl: "https://maps.google.com/?q=Greeley,+Colorado"
+  },
+
+  serviceCategories: [
+    {
+      name: "Interior Services",
+      services: ["home-repairs", "bathroom-kitchen", "flooring", "electrical-plumbing"]
+    },
+    {
+      name: "Exterior Services", 
+      services: ["exterior-work", "carpentry"]
+    }
+  ],
 
   services: [
     {
