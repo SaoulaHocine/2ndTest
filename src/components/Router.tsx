@@ -1,4 +1,3 @@
-@@ -1,41 +1 @@
 import React from 'react';
 import App from '../App';
 import BlogPage from '../pages/BlogPage';
