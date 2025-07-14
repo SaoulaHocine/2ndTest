@@ -20,9 +20,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {websiteConfig.navigation.map((item, index) => (
-              <a 
+              <a
                 key={index}
-                href={item.href} 
+                href={item.href}
+                onClick={(e) => {
+                  if (item.href === '/blog') {
+                    e.preventDefault();
+                    window.history.pushState({}, '', '/blog');
+                    window.location.reload();
+                  }
+                }}
                 className="text-gray-300 hover:text-blue-400 font-medium transition-colors"
               >
                 {item.name}
@@ -57,8 +64,17 @@ const Header = () => {
                 <a
                   key={index}
                   href={item.href}
+                  onClick={(e) => {
+                    if (item.href === '/blog') {
+                      e.preventDefault();
+                      window.history.pushState({}, '', '/blog');
+                      window.location.reload();
+                      toggleMenu();
+                    } else {
+                      toggleMenu();
+                    }
+                  }}
                   className="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-                  onClick={toggleMenu}
                 >
                   {item.name}
                 </a>
