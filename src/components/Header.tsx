@@ -24,12 +24,18 @@ const Header = () => {
                 key={index}
                 href={item.href}
                 onClick={toggleMenu}
+                className="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+              >
+                {item.name}
+              </a>
+            ))}
+            <a
               href="#contact"
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-500 transition-colors"
             >
               Free Quote
             </a>
-          </div>
+          </nav>
 
           {/* Mobile Menu Button */}
           <button
