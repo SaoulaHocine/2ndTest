@@ -23,23 +23,7 @@ const Header = () => {
               <a
                 key={index}
                 href={item.href}
-                onClick={(e) => {
-                  if (item.href === '/blog') {
-                    e.preventDefault();
-                    window.history.pushState({}, '', '/blog');
-                    window.location.reload();
-                  }
-                }}
-                className="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <a
+                onClick={toggleMenu}
               href="#contact"
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-500 transition-colors"
             >

@@ -6,6 +6,11 @@ import BlogPostPage from '../pages/BlogPostPage';
 const Router: React.FC = () => {
   const path = window.location.pathname;
 
+  // Handle root path variations
+  if (path === '/' || path === '/index.html') {
+    return <App />;
+  }
+
   // Blog listing route
   if (path === '/blog' || path === '/blog/') {
     return <BlogPage />;
@@ -20,7 +25,7 @@ const Router: React.FC = () => {
     return <BlogPage />;
   }
 
-  // Default route (e.g., home or anything else)
+  // Default route - fallback to home
   return <App />;
 };
 
