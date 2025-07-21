@@ -27,7 +27,7 @@ export const websiteConfig = {
     phone: "(213) 554-2617",
     phoneLink: "tel:+12135542617",
     email: "info@handymangreeleyco.com",
-    emailLink: "mailto:info@handymangreeleyco.com"
+    emailLink: "mailto:DevBySh@gmail.com"
   },
 
   navigation: [
