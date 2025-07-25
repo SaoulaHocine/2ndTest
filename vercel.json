@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "http://handymangreeleyco.com/(.*)",
+      "destination": "https://www.handymangreeleyco.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "http://www.handymangreeleyco.com/(.*)",
+      "destination": "https://www.handymangreeleyco.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "https://handymangreeleyco.com/(.*)",
+      "destination": "https://www.handymangreeleyco.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/blog",
