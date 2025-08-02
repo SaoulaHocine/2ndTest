@@ -659,23 +659,22 @@ Don't wait to **find a handyman** who can bring your home into the digital age. 
     description: "Discover how local handyman services are leading the smart home revolution. From smart thermostats to automated security systems, find the right handyman near you for cutting-edge home automation.",
     keywords: "smart home handyman services, handyman near me, local handyman services, smart thermostat installation, home automation handyman, handyman contractors near me, smart home installation, handyman electrician"
   }
-}
-  ],
-  {
-    id: "seasonal-home-maintenance-greeley-colorado",
-    title: "Seasonal Home Maintenance Guide for Greeley, Colorado Homeowners",
-    excerpt: "Keep your Greeley home in perfect condition year-round with this comprehensive seasonal maintenance guide. Learn what tasks to prioritize each season to prevent costly repairs and maintain your home's value.",
-    publishDate: "2024-12-20",
-    readTime: "10 min read",
-    category: "Home Maintenance",
-    image: "https://images.pexels.com/photos/5691662/pexels-photo-5691662.jpeg?auto=compress&cs=tinysrgb&w=800",
-    content: `Keep your Greeley home in perfect condition year-round with this comprehensive seasonal maintenance guide. Colorado's unique climate presents specific challenges for homeowners, from harsh winters to intense summer heat. Following a structured maintenance schedule can prevent costly repairs and keep your home comfortable and efficient.
+},
+{
+  id: "seasonal-home-maintenance-greeley-colorado",
+  title: "Seasonal Home Maintenance Guide for Greeley, Colorado Homeowners",
+  excerpt: "Keep your Greeley home in perfect condition year-round with this comprehensive seasonal maintenance guide. Learn what tasks to prioritize each season to prevent costly repairs and maintain your home's value.",
+  publishDate: "2024-12-20",
+  readTime: "10 min read",
+  category: "Home Maintenance",
+  image: "https://images.pexels.com/photos/5691662/pexels-photo-5691662.jpeg?auto=compress&cs=tinysrgb&w=800",
+  content: `Keep your Greeley home in perfect condition year-round with this comprehensive seasonal maintenance guide. Colorado's unique climate presents specific challenges for homeowners, from harsh winters to intense summer heat. Following a structured maintenance schedule can prevent costly repairs and keep your home comfortable and efficient.
 
 ## Spring Maintenance Checklist (March - May)
 
 Spring is the perfect time to assess winter damage and prepare your home for the warmer months ahead.
 
-**Exterior Maintenance:**
+### Exterior Maintenance:
 - Inspect roof for loose or damaged shingles from winter storms
 - Clean gutters and downspouts, check for proper drainage
 - Examine exterior walls for cracks or damage from freeze-thaw cycles
@@ -683,7 +682,7 @@ Spring is the perfect time to assess winter damage and prepare your home for the
 - Power wash decks, patios, and exterior surfaces
 - Inspect and repair fencing damaged by snow and wind
 
-**Interior Tasks:**
+### Interior Tasks:
 - Service HVAC system and replace air filters
 - Test smoke and carbon monoxide detectors
 - Check windows and doors for air leaks
@@ -691,7 +690,7 @@ Spring is the perfect time to assess winter damage and prepare your home for the
 - Deep clean carpets and upholstery
 - Organize and declutter storage areas
 
-**Landscaping and Outdoor Areas:**
+### Landscaping and Outdoor Areas:
 - Prune trees and shrubs (avoid pruning spring-flowering plants)
 - Prepare garden beds and plant cool-season vegetables
 - Check sprinkler systems and adjust watering schedules
@@ -701,20 +700,20 @@ Spring is the perfect time to assess winter damage and prepare your home for the
 
 Summer in Greeley brings intense heat and occasional severe weather, requiring specific maintenance attention.
 
-**Cooling System Care:**
+### Cooling System Care:
 - Clean or replace HVAC filters monthly during peak usage
 - Ensure proper airflow around outdoor AC units
 - Check and seal ductwork for efficiency
 - Install or maintain ceiling fans for improved air circulation
 
-**Exterior Protection:**
+### Exterior Protection:
 - Inspect and maintain exterior paint and staining
 - Check caulking around windows and doors
 - Maintain deck staining and sealing
 - Monitor irrigation systems for proper function
 - Keep gutters clear of debris from summer storms
 
-**Safety and Comfort:**
+### Safety and Comfort:
 - Test and maintain pool or spa equipment if applicable
 - Inspect outdoor electrical outlets and lighting
 - Check for pest intrusion points and seal as needed
@@ -724,21 +723,21 @@ Summer in Greeley brings intense heat and occasional severe weather, requiring s
 
 Fall is crucial for preparing your home for Colorado's harsh winter conditions.
 
-**Winterization Tasks:**
+### Winterization Tasks:
 - Drain and shut off outdoor water lines
 - Insulate exposed pipes in unheated areas
 - Clean and inspect fireplace and chimney
 - Service heating system before cold weather arrives
 - Seal gaps and cracks to prevent heat loss
 
-**Exterior Preparations:**
+### Exterior Preparations:
 - Clean gutters and install gutter guards if needed
 - Trim tree branches away from house and power lines
 - Store outdoor furniture and equipment properly
 - Apply winter fertilizer to lawn areas
 - Plant spring-flowering bulbs before ground freezes
 
-**Indoor Comfort:**
+### Indoor Comfort:
 - Reverse ceiling fan direction for winter operation
 - Check insulation in attic and basement areas
 - Weather-strip doors and windows
@@ -749,19 +748,19 @@ Fall is crucial for preparing your home for Colorado's harsh winter conditions.
 
 Winter maintenance focuses on safety, efficiency, and preventing damage from snow and ice.
 
-**Snow and Ice Management:**
+### Snow and Ice Management:
 - Keep walkways and driveways clear and safe
 - Remove snow from roof if accumulation is excessive
 - Prevent ice dams with proper attic ventilation
 - Monitor for icicle formation and address causes
 
-**Indoor Air Quality:**
+### Indoor Air Quality:
 - Use humidifiers to combat dry winter air
 - Change HVAC filters more frequently
 - Ensure proper ventilation in bathrooms and kitchen
 - Monitor for condensation issues on windows
 
-**Emergency Preparedness:**
+### Emergency Preparedness:
 - Keep emergency supplies readily available
 - Know location of main water shut-off valve
 - Maintain backup heating sources safely
@@ -782,25 +781,25 @@ Some maintenance tasks should be performed monthly regardless of season:
 
 While many maintenance tasks can be DIY projects, some require professional expertise:
 
-**Electrical Work:**
+### Electrical Work:
 - Outlet or switch replacement
 - Ceiling fan installation
 - Electrical panel upgrades
 - Outdoor lighting installation
 
-**Plumbing Services:**
+### Plumbing Services:
 - Pipe repairs or replacement
 - Water heater maintenance
 - Drain cleaning and repair
 - Fixture installation
 
-**HVAC Maintenance:**
+### HVAC Maintenance:
 - System tune-ups and repairs
 - Ductwork cleaning and sealing
 - Thermostat installation
 - Air quality improvements
 
-**Structural Repairs:**
+### Structural Repairs:
 - Roof repairs and maintenance
 - Siding repair or replacement
 - Foundation crack repair
@@ -808,35 +807,35 @@ While many maintenance tasks can be DIY projects, some require professional expe
 
 ## Cost-Effective Maintenance Strategies
 
-**Preventive vs. Reactive Maintenance:**
+### Preventive vs. Reactive Maintenance:
 Regular maintenance costs significantly less than emergency repairs. A $200 annual HVAC service can prevent a $2,000 system replacement.
 
-**Seasonal Service Packages:**
+### Seasonal Service Packages:
 Many local handyman services offer seasonal maintenance packages that bundle multiple tasks at discounted rates.
 
-**DIY vs. Professional Services:**
+### DIY vs. Professional Services:
 Focus your DIY efforts on simple tasks like filter changes and basic cleaning, while leaving complex repairs to licensed professionals.
 
 ## Greeley-Specific Considerations
 
-**Climate Challenges:**
+### Climate Challenges:
 - Rapid temperature changes can cause expansion and contraction damage
 - High altitude UV exposure requires more frequent exterior maintenance
 - Dry climate necessitates attention to wood and caulking
 
-**Local Resources:**
+### Local Resources:
 - Greeley offers rebates for energy-efficient upgrades
 - Local hardware stores provide climate-specific products
 - City services include yard waste collection during peak seasons
 
 ## Creating Your Maintenance Schedule
 
-**Use Technology:**
+### Use Technology:
 - Set smartphone reminders for monthly tasks
 - Create seasonal checklists and track completion
 - Take photos to document condition changes over time
 
-**Budget Planning:**
+### Budget Planning:
 - Allocate 1-3% of home value annually for maintenance
 - Plan major expenses during off-peak seasons for better pricing
 - Consider maintenance contracts for major systems
@@ -846,14 +845,13 @@ Focus your DIY efforts on simple tasks like filter changes and basic cleaning, w
 Consistent seasonal maintenance is the key to protecting your investment and ensuring your Greeley home remains comfortable and efficient year-round. By following this comprehensive guide and knowing when to call professional handyman services, you can prevent costly repairs and maintain your home's value.
 
 Remember that Colorado's unique climate requires specific attention to weatherization, HVAC efficiency, and exterior protection. When in doubt, consult with local handyman professionals who understand Greeley's specific maintenance challenges and can provide expert guidance tailored to your home's needs.`,
-    seo: {
-      title: "Seasonal Home Maintenance Guide for Greeley, Colorado | Expert Tips",
-      description: "Complete seasonal home maintenance guide for Greeley, CO homeowners. Learn what tasks to prioritize each season to prevent costly repairs and maintain home value.",
-      keywords: "seasonal home maintenance Greeley CO, home maintenance checklist Colorado, Greeley home care tips, seasonal maintenance guide"
-    }
+  seo: {
+    title: "Seasonal Home Maintenance Guide for Greeley, Colorado | Expert Tips",
+    description: "Complete seasonal home maintenance guide for Greeley, CO homeowners. Learn what tasks to prioritize each season to prevent costly repairs and maintain home value.",
+    keywords: "seasonal home maintenance Greeley CO, home maintenance checklist Colorado, Greeley home care tips, seasonal maintenance guide"
   }
-
-  testimonials: [
+}
+  ],
     {
       name: "Sarah Johnson",
       location: "Greeley, CO",
