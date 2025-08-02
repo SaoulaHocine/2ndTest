@@ -51,9 +51,6 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
         if (paragraph.startsWith('## ')) {
           return <h2 key={index} className="text-2xl font-bold text-white mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
         }
-        if (paragraph.startsWith('### ')) {
-          return <h3 key={index} className="text-xl font-semibold text-white mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
-        }
         // Handle bold text as subtitles
         if (paragraph.includes('**')) {
           const parts = paragraph.split(/\*\*(.*?)\*\*/g);
@@ -62,30 +59,13 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
               {parts.map((part, partIndex) => {
                 if (partIndex % 2 === 1) {
                   // This is the content between **
-                  return <strong key={partIndex} className="text-white font-semibold">{part}</strong>;
+                  return <h3 key={partIndex} className="text-xl font-semibold text-white mt-6 mb-3">{part}</h3>;
                 } else if (part.trim()) {
                   // This is regular text
                   return <p key={partIndex} className="text-gray-300 leading-relaxed">{part}</p>;
                 }
                 return null;
               })}
-            </div>
-          );
-        }
-        // Handle lists starting with - 
-        if (paragraph.includes('\n- ') || paragraph.startsWith('- ')) {
-          const items = paragraph.split('\n').filter(item => item.trim().startsWith('- '));
-          const beforeList = paragraph.split('\n- ')[0];
-          return (
-            <div key={index} className="my-4">
-              {beforeList && beforeList.trim() && (
-                <p className="text-gray-300 leading-relaxed mb-3">{beforeList}</p>
-              )}
-              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-                {items.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item.replace('- ', '')}</li>
-                ))}
-              </ul>
             </div>
           );
         }
@@ -110,11 +90,17 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ postId }) => {
             </div>
           );
         }
-        // Handle regular paragraphs
-        if (paragraph.trim()) {
-          return <p key={index} className="text-gray-300 leading-relaxed mb-4">{paragraph}</p>;
+        if (paragraph.startsWith('- ')) {
+          const items = paragraph.split('\n').filter(item => item.startsWith('- '));
+          return (
+            <ul key={index} className="list-disc list-inside space-y-2 text-gray-300 my-4">
+              {items.map((item, itemIndex) => (
+                <li key={itemIndex}>{item.replace('- ', '')}</li>
+              ))}
+            </ul>
+          );
         }
-        return null;
+        return <p key={index} className="text-gray-300 leading-relaxed mb-4">{paragraph}</p>;
       });
   };
 
