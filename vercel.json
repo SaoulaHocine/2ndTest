@@ -1,17 +1,7 @@
 {
   "redirects": [
     {
-      "source": "http://handymangreeleyco.com/(.*)",
-      "destination": "https://www.handymangreeleyco.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "http://www.handymangreeleyco.com/(.*)",
-      "destination": "https://www.handymangreeleyco.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "https://handymangreeleyco.com/(.*)",
+      "source": "/handymangreeleyco.com/(.*)",
       "destination": "https://www.handymangreeleyco.com/$1",
       "permanent": true
     }
@@ -26,7 +16,23 @@
       "destination": "/index.html"
     },
     {
-      "source": "/((?!api/).*)",
+      "source": "/services",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/light-fixtures",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/((?!api/|_next/|_static/|favicon.ico|robots.txt|sitemap.xml|.*\\.).*)$",
       "destination": "/index.html"
     }
   ],
