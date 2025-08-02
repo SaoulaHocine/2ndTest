@@ -110,6 +110,43 @@ export const websiteConfig = {
  ],
 
   testimonials: [
+    {
+      name: "Sarah Johnson",
+      location: "Greeley, CO",
+      rating: 5,
+      text: "Excellent service! They fixed my kitchen faucet and installed new light fixtures. Very professional and reasonably priced.",
+      service: "Kitchen Repairs"
+    },
+    {
+      name: "Mike Rodriguez", 
+      location: "Evans, CO",
+      rating: 5,
+      text: "Great work on our deck repair. They were on time, cleaned up after themselves, and the quality was outstanding.",
+      service: "Deck Repair"
+    },
+    {
+      name: "Linda Chen",
+      location: "Windsor, CO",
+      rating: 5,
+      text: "I needed several small repairs done around the house. They bundled everything into one visit and saved me money. Highly recommend!",
+      service: "General Repairs"
+    },
+    {
+      name: "Robert Martinez",
+      location: "Greeley, CO",
+      rating: 5,
+      text: "Professional bathroom remodel from start to finish. Great attention to detail and stayed within budget.",
+      service: "Bathroom Remodeling"
+    },
+    {
+      name: "Jennifer Davis",
+      location: "Eaton, CO", 
+      rating: 5,
+      text: "Fast and reliable service for our flooring installation. The team was courteous and the work quality exceeded expectations.",
+      service: "Flooring Installation"
+    }
+  ],
+  
   services: [
     {
       title: "General Home Repairs",
@@ -852,44 +889,6 @@ Remember that Colorado's unique climate requires specific attention to weatheriz
     keywords: "seasonal home maintenance Greeley CO, home maintenance checklist Colorado, Greeley home care tips, seasonal maintenance guide"
   }
 }
-  ],
-
-  testimonials: [
-    {
-      name: "Sarah Johnson",
-      location: "Greeley, CO",
-      rating: 5,
-      text: "Excellent service! They fixed my kitchen faucet and installed new light fixtures. Very professional and reasonably priced.",
-      service: "Kitchen Repairs"
-    },
-    {
-      name: "Mike Rodriguez", 
-      location: "Evans, CO",
-      rating: 5,
-      text: "Great work on our deck repair. They were on time, cleaned up after themselves, and the quality was outstanding.",
-      service: "Deck Repair"
-    },
-    {
-      name: "Linda Chen",
-      location: "Windsor, CO",
-      rating: 5,
-      text: "I needed several small repairs done around the house. They bundled everything into one visit and saved me money. Highly recommend!",
-      service: "General Repairs"
-    },
-    {
-      name: "Robert Martinez",
-      location: "Greeley, CO",
-      rating: 5,
-      text: "Professional bathroom remodel from start to finish. Great attention to detail and stayed within budget.",
-      service: "Bathroom Remodeling"
-    },
-    {
-      name: "Jennifer Davis",
-      location: "Eaton, CO", 
-      rating: 5,
-      text: "Fast and reliable service for our flooring installation. The team was courteous and the work quality exceeded expectations.",
-      service: "Flooring Installation"
-    }
   ],
 
   seo: {
