@@ -109,6 +109,7 @@ export const websiteConfig = {
    "Carpentry & Woodworking"
  ],
 
+  testimonials: [
   services: [
     {
       title: "General Home Repairs",
