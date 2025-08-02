@@ -852,6 +852,8 @@ Remember that Colorado's unique climate requires specific attention to weatheriz
   }
 }
   ],
+
+  testimonials: [
     {
       name: "Sarah Johnson",
       location: "Greeley, CO",
